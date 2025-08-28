@@ -1,0 +1,57 @@
+```mermaid
+classDiagram
+    class Programa {
+        +main(String[] args)
+    }
+
+    class MenuConsole {
+        -Scanner scanner
+        -GerenciadorEventos ge
+        -GerenciadorUsuarios gu
+        +exibirMenuPrincipal()
+        +processarOpcao()
+    }
+
+    class GerenciadorEventos {
+        -List~Evento~ eventos
+        -ArquivoEventos arquivo
+        +criarEvento()
+        +listarEventos()
+        +confirmarPresenca(Evento, Usuario)
+        +salvar()
+        +carregar()
+    }
+
+    class GerenciadorUsuarios {
+        -List~Usuario~ usuarios
+        +cadastrarUsuario()
+        +buscarUsuarioPorEmail(String email)
+    }
+
+    class Evento {
+        -String nome
+        -LocalDateTime dataHora
+        -String local
+        -List~Usuario~ participantes
+        +adicionarParticipante(Usuario u)
+    }
+
+    class Usuario {
+        -String nome
+        -String email
+        -String cidade
+    }
+    
+    class ArquivoEventos {
+        +salvarEventos(List~Evento~ eventos)
+        +carregarEventos() List~Evento~
+    }
+
+    %% --- Relacionamentos ---
+    Programa --> MenuConsole : Inicia
+    MenuConsole --> GerenciadorEventos : Utiliza
+    MenuConsole --> GerenciadorUsuarios : Utiliza
+    GerenciadorEventos "1" -- "1" ArquivoEventos : Persiste com
+    GerenciadorEventos "1" *-- "0..*" Evento : Gerencia
+    GerenciadorEventos --> GerenciadorUsuarios : Consulta
+    Evento "1" o-- "0..*" Usuario : Tem participantes
