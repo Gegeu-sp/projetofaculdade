@@ -1,10 +1,4 @@
-Com certeza! Aqui está o código Markdown completo, exatamente como o anterior, mas com a seção "Estrutura do Projeto" removida, conforme solicitado.
-
-Basta copiar o bloco de código abaixo e colar no seu arquivo.
-
-Markdown
-
-# 🎯 Projeto: Agenda de Eventos em Java (Console)
+# Projeto: Agenda de Eventos em Java (Console)
 
 <p align="center">
   <img src="https://img.shields.io/badge/Java-11-blue?logo=java&logoColor=white" alt="Java 11">
@@ -12,7 +6,7 @@ Markdown
   <img src="https://img.shields.io/badge/Status-Concluído-brightgreen" alt="Status Concluído">
 </p>
 
-## 📋 Descrição
+## Descrição
 
 Este projeto implementa uma agenda de eventos simples que roda no terminal. Desenvolvido em Java puro, o sistema permite cadastrar usuários, gerenciar eventos, confirmar presença e persistir todos os dados em um arquivo binário, garantindo que as informações não sejam perdidas entre as execuções.
 
@@ -21,17 +15,17 @@ Este projeto implementa uma agenda de eventos simples que roda no terminal. Dese
 
 ---
 
-## ✨ Funcionalidades Principais
+## Funcionalidades Principais
 
-* **👥 Cadastro de Usuários:** Permite registrar novos usuários com nome, email e cidade.
-* **📅 Listagem de Eventos:** Exibe todos os eventos disponíveis, ordenados cronologicamente.
-* **✅ Confirmação de Presença:** Usuários podem se inscrever nos eventos de seu interesse.
-* **📂 Meus Eventos:** Visualização dos eventos em que um usuário confirmou presença.
-* **💾 Persistência de Dados:** Salva e carrega automaticamente os dados de eventos no arquivo `events.data`.
+* **Cadastro de Usuários:** Permite registrar novos usuários com nome, email e cidade.
+* **Listagem de Eventos:** Exibe todos os eventos disponíveis, ordenados cronologicamente.
+* **Confirmação de Presença:** Usuários podem se inscrever nos eventos de seu interesse.
+* **Meus Eventos:** Visualização dos eventos em que um usuário confirmou presença.
+* **Persistência de Dados:** Salva e carrega automaticamente os dados de eventos no arquivo `events.data`.
 
 ---
 
-## 🛠️ Tecnologias e Ferramentas
+## Tecnologias e Ferramentas
 
 * **Linguagem:** `Java 11`
 * **Bibliotecas Padrão:** `java.time`, `java.io`, `java.util`
@@ -39,7 +33,7 @@ Este projeto implementa uma agenda de eventos simples que roda no terminal. Dese
 
 ---
 
-## 📁 ESTRUTURA DO PROJETO
+## ESTRUTURA DO PROJETO
 
 src/
 ├── gestoreventos/
@@ -63,7 +57,7 @@ diagrama_de_classes.png # Diagrama de classes
 
 Este projeto foi fundamental para solidificar conhecimentos em diversas áreas:
 
-#### **☕ Conceitos Fundamentais de Java**
+#### **Conceitos Fundamentais de Java**
 * Estrutura de classes, objetos e modificadores de acesso (`public`, `private`).
 * Uso de construtores, getters e o princípio de encapsulamento.
 * Manipulação de coleções com `ArrayList` e `List`.
@@ -71,19 +65,19 @@ Este projeto foi fundamental para solidificar conhecimentos em diversas áreas:
 * Leitura de entrada do usuário com a classe `Scanner`.
 * Manipulação de datas e horas com a API `LocalDateTime`.
 
-#### **🏗️ Arquitetura de Software**
+#### **Arquitetura de Software**
 * **Separação de Responsabilidades:** Divisão do código em camadas (Model, Logic, Storage, UI).
 * **Programação Orientada a Objetos (POO):** Aplicação prática dos pilares da POO.
 * **Organização de Pacotes:** Estruturação do projeto de forma clara e manutenível.
 
-#### **💾 Persistência de Dados**
+#### **Persistência de Dados**
 * **Serialização de Objetos:** Implementação da interface `Serializable` para converter objetos em bytes.
 * **Leitura e Escrita de Arquivos:** Uso de `FileInputStream` e `FileOutputStream` para persistir dados.
 * **Gerenciamento de Recursos:** Fechamento correto de *streams* para evitar vazamento de recursos.
 
 ---
 
-## 🚀 Guia de Instalação e Execução
+## Guia de Instalação e Execução
 
 Siga os passos abaixo para compilar e executar o projeto em sua máquina local.
 
@@ -96,7 +90,7 @@ Siga os passos abaixo para compilar e executar o projeto em sua máquina local.
 
 > **Dica:** Você pode usar um gerenciador de pacotes como o **winget** (Windows) para facilitar a instalação.
 
-```powershell
+```powershell 
 # Comando para instalar o Temurin JDK 11 via winget
 winget install EclipseAdoptium.Temurin.11.JDK
 
@@ -143,18 +137,3 @@ java -cp bin gestoreventos.Programa
 
 ---
 
-## 📝 Observações
-
-* **Arquivo de Persistência:** O arquivo `events.data` é criado e gerenciado automaticamente na raiz do projeto. Não o apague se quiser manter os dados dos eventos.
-* **Codificação de Caracteres:** O projeto foi desenvolvido para lidar com caracteres do padrão UTF-8. Se houver problemas de acentuação no seu terminal, verifique sua configuração.
-
----
-
-## 📞 Contato
-
-**Argeu Rodrigues**
-
-* [LinkedIn](URL_DO_SEU_LINKEDIN)
-* [GitHub](URL_DO_SEU_GITHUB)
-
-> "Aprender a programar é como aprender uma nova linguagem: exige prática, paciência e persistência!"
