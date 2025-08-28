@@ -147,7 +147,8 @@ java -cp bin gestoreventos.Programa
 ---
 
 
-##  Autor
-Desenvolvido por Argeu Rodrigues
-* LinkedIn: www.linkedin.com/in/argeu-rodrigues-9a6b7174
-* GitHub: https://github.com/Gegeu-sp
+## 👨‍💻 Autor
+
+Desenvolvido por **Argeu Rodrigues**. Entre em contato ou veja outros projetos:
+* **LinkedIn:** [Argeu Rodrigues](https://www.linkedin.com/in/argeu-rodrigues-9a6b7174)
+* **GitHub:** [@Gegeu-sp](https://github.com/Gegeu-sp)
